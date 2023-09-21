@@ -1,0 +1,14 @@
+@use './globals.scss' as *;
+
+  .Home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $bgColor;
+    font-family: Vazir;
+
+    
+  }
+
+  
+    

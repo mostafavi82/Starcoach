@@ -1,0 +1,24 @@
+/* @font-face {
+    font-family: Vazir;
+    src: url("../public/fonts/Vazir-Medium.ttf") format("truetype");
+  }
+  #__next{
+      padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Vazir;
+  } */
+
+  body {
+    font-family: Vazir;
+    margin: 0;
+    padding: 0;
+}
+body, p ,h1, h2, h3, h4, h5, h6 {
+  font-family: Vazir;
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
