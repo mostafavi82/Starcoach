@@ -80,10 +80,10 @@
   color: $whiteColor;
   border: none;
   cursor: pointer;
-  border-radius: 50px;
-  @include set-width(135px, 270px);
-  @include set-height(41px, 82px);
-  @include set-font-size(15px, 34px);
+  border-radius: 10px;
+  @include set-width(97px, 162px);
+  @include set-height(30px, 50px);
+  @include set-font-size(12px, 20px);
   font-weight: 500;
   font-size: normal;
 }
