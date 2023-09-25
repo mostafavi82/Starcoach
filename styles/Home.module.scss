@@ -1,14 +1,118 @@
 @use './globals.scss' as *;
 
-  .Home{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: $bgColor;
-    font-family: Vazir;
+.Home {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  background-color: $bgColor;
+  font-family: Vazir;
 
-    
+  #mainImage {
+    display: flex;
+    width: 62%;
+    height: 53%;
+    float: left;
+    margin-left: 37px;
+    margin-top: 34px;
+
   }
 
-  
-    
+  #mainH1 {
+    color: $textColor;
+    text-align: right;
+    font-family: Vazir;
+    @include set-font-size(22px, 32px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 150px;
+    margin-right: 25px;
+  }
+
+  #mainH1Mobile {
+    display: none;
+    color: $textColor;
+    text-align: center;
+    font-family: Vazir;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  #mainH2 {
+    color: $textColor;
+    text-align: right;
+    font-family: Vazir;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 35px;
+    margin-right: 25px;
+  }
+
+  #mainP {
+    color: #2F2F2F;
+    text-align: right;
+    font-family: Vazir;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 16px;
+    margin-right: 25px;
+  }
+
+  #mainButtons {
+    margin-top: 67px;
+    margin-right: 50px;
+    text-align: right;
+  }
+
+  #coursesBtn {
+    margin-right: 36px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    #mainImage {
+      width: 87%;
+      height: 25%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+
+    }
+
+    #mainH1 {
+      display: none;
+    }
+
+    #mainH2 {
+      display: none;
+    }
+
+    #mainH1Mobile{
+      display: block;
+      margin-right: 36px;
+      margin-left: 36px;
+      margin-top: 41px;
+    }
+
+    #mainP{
+      text-align: center;
+      margin-right: 36px;
+      margin-left: 36px;
+    }
+
+    #mainButtons{
+      text-align: center;
+      margin-top: 53px;
+    }
+
+    #coursesBtn{
+       margin-left: 50px;
+    }
+  }
+}

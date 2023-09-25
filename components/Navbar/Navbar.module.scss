@@ -9,26 +9,49 @@
     margin-top: 2vw;
     padding: 0 2vw;
     align-items: center;
+    // margin-right: 37px;
+    // margin-left: 37px;
 
     #logo {
-        @include set-width(123px, 185px);
-        @include set-height(40px, 60px);
+        @include set-width(123px, 150px);
+        @include set-height(40px, 48px);
+        background-color: $bgColor;
     }
 
     #menu {
         background-color: $bgColor;
         border: none;
-        @include set-font-size(12px, 24px);
+        @include set-font-size(12px, 18px);
         color: #263238;
         font-family: Vazir;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+        cursor: pointer;
     }
 
     #menuAndLogo{
         display: flex;
-        @include set-width(123px, 500px);
+        @include set-width(123px, 420px);
         justify-content: space-between;
     }
+
+    #menuIcon{
+        display: none;
+        width: 45px;
+        height: 45px;
+        border: none;
+        background-color: $bgColor;
+        margin-right: 10px;
+       // margin-top: 20px;
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 1000px) {
+        #menu {display: none;}
+        #logo {justify-content: right;}
+        #menuAndLogo{justify-content: center;}
+        #menuIcon{display: flex;}
+        //#signupBtn{margin-top: 20px;}
+      }
 }
