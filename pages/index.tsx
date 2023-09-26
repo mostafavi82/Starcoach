@@ -21,7 +21,7 @@ export default function Home() {
     <div className={styles.Home}>
       <Navbar></Navbar>
 
-      <div>
+      <div id={styles.part1}>
         <img id={styles.mainImage} src='https://starcoach-files.storage.iran.liara.space/main-image.png' />
         <div>
           <h1 id={styles.mainH1}>
@@ -48,6 +48,70 @@ export default function Home() {
             <button className={styles.mainBtn}>
             از اینجا شروع کن
             </button>
+          </div>
+        </div>
+      </div>
+
+      <div id={styles.part2}>
+        <div id={styles.headerP2}>
+          <h3>
+          در استارکوچ چطور برنامه نویسی یاد می گیریم؟
+          </h3>
+
+          <div id={styles.square}></div>
+        </div>
+
+        <p id={styles.textP2}>
+        یادگیری در استارکوچ با خیلی از سایت های دیگه فرق داره! ما در استارکوچ تلاش کردیم آموزش ها پروژه محور باشه ، دانشجو ها با همکلاسی ها و منتور ها ارتباط داشته باشند که کیفیت به بیشترین حد از خودش برسه.
+        </p>
+
+        <div id={styles.cards}>
+        <div id={styles.cardAndNumber}>
+            <div id={styles.number}>
+              3
+            </div>
+
+            <div id={styles.card}>
+              <img id={styles.imgInCard} src='https://starcoach-files.storage.iran.liara.space/third-step.png'/>
+
+              <hr></hr>
+
+              <p id={styles.textInCard}>
+              در چت با منتور های استارکوچ ابهاماتتان را حل می کنید و هفته ای دو تماس تصویری با آنها دارید
+              </p>
+            </div>
+          </div>
+
+          <div id={styles.cardAndNumber}>
+            <div id={styles.number}>
+              2
+            </div>
+
+            <div id={styles.card}>
+              <img id={styles.imgInCard} src='https://starcoach-files.storage.iran.liara.space/second-step.png'/>
+
+              <hr></hr>
+
+              <p id={styles.textInCard}>
+              با دیگر دانشجویان دوره به گروه های 5 نفره تقسیم می شوید و تسک ها را گروهی انجام می دهید
+              </p>
+            </div>
+          </div>
+
+          <div id={styles.cardAndNumber}>
+            <div id={styles.number}>
+              1
+            </div>
+
+            <div id={styles.card}>
+              <img id={styles.imgInCard} src='https://starcoach-files.storage.iran.liara.space/first-step.png'/>
+
+              <hr></hr>
+
+              <p id={styles.textInCard}>
+              از متخصصان و افراد موفق نقشه راه و پروژه برای شما گرفته می شود
+              </p>
+            </div>
           </div>
         </div>
       </div>

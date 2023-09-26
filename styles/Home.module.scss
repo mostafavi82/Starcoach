@@ -66,12 +66,108 @@
 
   #mainButtons {
     margin-top: 67px;
-    margin-right: 50px;
+    margin-right: 25px;
     text-align: right;
   }
 
   #coursesBtn {
     margin-right: 36px;
+  }
+
+  #headerP2 {
+    display: flex;
+    justify-content: right;
+    margin-top: 188px;
+    color: $textColor;
+    text-align: right;
+    font-family: Vazir;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  h3 {
+    @include set-font-size(18px, 26px);
+  }
+
+  #square {
+    @include set-height(12px, 22px);
+    @include set-width(12px, 22px);
+    background-color: $mainColor ;
+    border-radius: 3px;
+    margin-left: 15px;
+    margin-right: 67px;
+    margin-top: 9px;
+  }
+
+  #textP2 {
+    color: #000;
+    text-align: right;
+    font-family: Vazir;
+    @include set-font-size(15px, 18px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 100px;
+    margin-left: 67px;
+    margin-top: 20px;
+  }
+
+  #number {
+    color: #FFF;
+    text-align: center;
+    font-family: Vazir;
+    @include set-font-size(21px, 24px);
+    @include set-width(40px, 45px);
+    @include set-height(40px, 45px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 50%;
+    background-color: $secoundColor;
+    padding-top: 5px;
+    margin-bottom: 11px;
+    margin-top: 30px;
+
+  }
+
+  #imgInCard {
+    @include set-width(225px, 360px);
+    @include set-height(148px, 219px);
+    margin-bottom: 20px;
+    margin-top: 23px;
+  }
+
+  #cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #card {
+    @include set-width(250px, 370px);
+    @include set-height(280px, 410px);
+    background-color: #FFF;
+    border-radius: 20px;
+  }
+
+  #cardAndNumber {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+  }
+
+  #textInCard {
+    color: #000;
+    text-align: center;
+    font-family: Vazir;
+    @include set-font-size(14px, 18px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 15px;
   }
 
   @media screen and (max-width: 1000px) {
@@ -93,26 +189,40 @@
       display: none;
     }
 
-    #mainH1Mobile{
+    #mainH1Mobile {
       display: block;
       margin-right: 36px;
       margin-left: 36px;
       margin-top: 41px;
     }
 
-    #mainP{
+    #mainP {
       text-align: center;
       margin-right: 36px;
       margin-left: 36px;
     }
 
-    #mainButtons{
+    #mainButtons {
       text-align: center;
       margin-top: 53px;
     }
 
-    #coursesBtn{
-       margin-left: 50px;
+    #coursesBtn {
+      margin-left: 50px;
     }
+
+    #square {
+      border-radius: 1.5px;
+      margin-right: 14px;
+    }
+
+    #headerP2 {
+      margin-top: 66px;
+    }
+
+    #textP2 {
+      margin-right: 37px;
+    }
+
   }
 }
