@@ -21,9 +21,9 @@
     color: $textColor;
     text-align: right;
     font-family: Vazir;
-    @include set-font-size(22px, 32px);
+    @include set-font-size(22px, 30px);
     font-style: normal;
-    font-weight: 700;
+    font-weight: bold;
     line-height: normal;
     margin-top: 150px;
     margin-right: 25px;
@@ -88,6 +88,7 @@
 
   h3 {
     @include set-font-size(18px, 26px);
+    margin-left: 30px;
   }
 
   #square {
@@ -138,11 +139,11 @@
     margin-top: 23px;
   }
 
-  #cards{
+  #cards {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
   }
 
   #card {
@@ -168,6 +169,124 @@
     font-weight: 400;
     line-height: normal;
     margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #iconsP3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center
+  }
+
+  #IconP3 {
+    width: 120px;
+    margin-bottom: 20px;
+  }
+
+  #imgAndIconsP3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 80px;
+    margin-top: 70px;
+  }
+
+  #iconsInRowP3 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #iconAndTextP3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include set-width(150px, 270px);
+    margin-bottom: 60px;
+    margin-left: 20px;
+  }
+
+  #textP3 {
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    font-family: Vazir;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  #imgP3 {
+    margin-left: 80px;
+    width: 484px;
+    height: 385px;
+
+  }
+
+  #commentCards{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-top: 70px;
+  }
+
+
+  #commentCard {
+    @include set-width(245px, 360px);
+    @include set-height(281px, 360px);
+    background-color: #FFF;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    display: inline-flex;
+    margin-right: 30px;
+    margin-left: 50px;
+    
+  }
+
+  #commentsImg {
+    border-radius: 50%;
+    @include set-width(80px, 120px);
+    @include set-height(80px, 120px);
+    margin-top: 17px;
+    margin-bottom: 22px;
+  }
+
+  #commentsWriter {
+    color: #000;
+    text-align: center;
+    font-family: Vazir;
+    @include set-font-size(17px, 20px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  #writersJob {
+    color: #263238;
+    text-align: center;
+    font-family: Vazir;
+    @include set-font-size(14px, 18px);
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 5px;
+    margin-bottom: 30px;
+  }
+
+  #comment {
+    color: #263238;
+    text-align: center;
+    font-family: Vazir;
+    @include set-font-size(13px, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 20px;
+    margin-left: 20px;
+   white-space: wrap;
   }
 
   @media screen and (max-width: 1000px) {
@@ -224,5 +343,61 @@
       margin-right: 37px;
     }
 
+    #imgInCard {
+      margin-bottom: 0;
+    }
+
+    #imgP3 {
+      display: none;
+    }
+
+    #imgAndIconsP3 {
+      margin-right: 20px;
+    }
+
+    #writersJob {
+      margin-bottom: 15px;
+    }
+
+    #commentsImg{
+      margin-bottom: 15px;
+    }
+
+    #commentCard{
+      margin-right: 13px;
+      margin-left: 20px;
+    }
+
+    #commentCards{
+      margin-top: 30px;
+    }
+
+
   }
+
+  @media screen and (max-width: 560px) {
+    #cardAndNumber {
+      flex-direction: row-reverse;
+      margin-top: 30px;
+    }
+
+    #number {
+      margin-left: 26px;
+    }
+
+    #IconP3 {
+      width: 60px;
+    }
+
+    #textP3 {
+      font-size: 12px;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    #imgP3 {
+      display: none;
+    }
+  }
+
 }
