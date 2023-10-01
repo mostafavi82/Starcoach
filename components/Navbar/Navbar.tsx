@@ -17,11 +17,11 @@ const Navbar = () => {
           سامانه آموزشی
         </button>
 
-        <img id={styles.logo} src='https://starcoach-files.storage.iran.liara.space/logo.png' />
+        <img id={styles.logo} src='https://starcoach-files.storage.iran.liara.space/logo.png' alt='Starcoach' />
         </div>
 
         <button id={styles.menuIcon}>
-          <img src='https://starcoach-files.storage.iran.liara.space/menu.png'/>
+          <img src='https://starcoach-files.storage.iran.liara.space/menu.png' alt='menu'/>
         </button>
     </div>
   );
