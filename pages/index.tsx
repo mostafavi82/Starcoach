@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
-import MentorSvg from '../public/images/mentor.svg'
+// import MentorSvg from '../public/images/mentor.svg'
 import { useEffect } from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import { faqData } from '../data/faqData';
@@ -20,26 +20,42 @@ export default function Home() {
   }, []);
 
   return (
+    <>
+    <Head>
+      <title>برنامه نویسی با روش نوین| استارکوچ</title>
+      <meta name="description" content="برنامه نویسی را بصورت پروژه محور ، گروهی و زیرنظر منتورها یاد بگیر" key="desc" />
+        <meta property="og:title" content=" آموزش برنامه نویسی با روشی نوین در استارکوچ" />
+        <meta
+          property="og:description"
+          content="برنامه نویسی را بصورت پروژه محور ، گروهی و زیرنظر منتورها یاد بگیر"
+        />
+        <meta
+          property="og:image"
+          content='https://starcoach-files.storage.iran.liara.space/main-image.png'
+        />
+    </Head>
     <div className={styles.Home}>
       <Navbar></Navbar>
 
       <div id={styles.part1}>
-        <img id={styles.mainImage} src='https://starcoach-files.storage.iran.liara.space/main-image.png' />
+        <img id={styles.mainImage} src='https://starcoach-files.storage.iran.liara.space/main-image.png' alt='programing learning'/>
         <div>
-          <h1 id={styles.mainH1}>
-            برنامه نویسی رو با استارکوچ یاد بگیر
+          <h1 className={styles.mainH1} >
+            برنامه نویسی رو با روشی نوین از استارکوچ یاد بگیر
           </h1>
 
-          <h1 id={styles.mainH1Mobile}>
-            برنامه نویسی رو پروژه محور و با بیشترین بهره وری یاد بگیر
+          <h1 className={styles.mainH1Mobile}>
+          برنامه نویسی رو با روشی نوین از استارکوچ یاد بگیر 
           </h1>
 
-          <h2 id={styles.mainH2}>
+          {/* <h2 id={styles.mainH2}>
             یادگیری برنامه نویسی با روش جدید
-          </h2>
+          </h2> */}
 
           <p id={styles.mainP}>
-            با استارکوچ ، برنامه نویسی رو در کنار دیگران و بصورت پروژه محور یاد بگیر و خودت رو برای ورود به بازار کار آماده کن
+          با استارکوچ ، برنامه نویسی رو در کنار دیگران و بصورت پروژه محور یاد بگیر و خودت رو برای ورود به بازار کار آماده کن
+
+با استارکوچ ، برنامه نویسی رو در کنار دیگران و بصورت پروژه محور یاد بگیر و خودت رو برای ورود به بازار کار آماده کن
           </p>
 
           <div id={styles.mainButtons}>
@@ -56,9 +72,9 @@ export default function Home() {
 
       <div id={styles.part2}>
         <div id={styles.headerP2}>
-          <h3>
+          <h2>
             در استارکوچ چطور برنامه نویسی یاد می گیریم؟
-          </h3>
+          </h2>
 
           <div id={styles.square}></div>
         </div>
@@ -74,13 +90,13 @@ export default function Home() {
             </div>
 
             <div id={styles.card}>
-              <img id={styles.imgInCard} src='https://starcoach-files.storage.iran.liara.space/third-step.png' />
+              <img id={styles.imgInCard} src='https://starcoach-files.storage.iran.liara.space/third-step.png' alt='chat and video call with mentors'/>
 
               <hr></hr>
 
-              <p id={styles.textInCard}>
+              <h3 id={styles.textInCard}>
                 در چت با منتور های استارکوچ ابهاماتتان را حل می کنید و هفته ای دو تماس تصویری با آنها دارید
-              </p>
+              </h3>
             </div>
           </div>
 
@@ -90,13 +106,13 @@ export default function Home() {
             </div>
 
             <div id={styles.card}>
-              <img id={styles.imgInCard} src='https://starcoach-files.storage.iran.liara.space/second-step.png' />
+              <img id={styles.imgInCard} src='https://starcoach-files.storage.iran.liara.space/second-step.png' alt='teamwork'/>
 
               <hr></hr>
 
-              <p id={styles.textInCard}>
+              <h3 id={styles.textInCard}>
                 با دیگر دانشجویان دوره به گروه های 5 نفره تقسیم می شوید و تسک ها را گروهی انجام می دهید
-              </p>
+              </h3>
             </div>
           </div>
 
@@ -106,13 +122,13 @@ export default function Home() {
             </div>
 
             <div id={styles.card}>
-              <img id={styles.imgInCard} src='https://starcoach-files.storage.iran.liara.space/first-step.png' />
+              <img id={styles.imgInCard} src='https://starcoach-files.storage.iran.liara.space/first-step.png' alt='business man coaches'/>
 
               <hr></hr>
 
-              <p id={styles.textInCard}>
+              <h3 id={styles.textInCard}>
                 از متخصصان و افراد موفق نقشه راه و پروژه برای شما گرفته می شود
-              </p>
+              </h3>
             </div>
           </div>
         </div>
@@ -120,9 +136,9 @@ export default function Home() {
 
       <div id={styles.part3}>
         <div id={styles.headerP2}>
-          <h3>
+          <h2>
             استارکوچ یک سایت آموزش آنلاین عادی نیست چون
-          </h3>
+          </h2>
 
           <div id={styles.square}></div>
         </div>
@@ -131,58 +147,58 @@ export default function Home() {
           <div id={styles.iconsP3}>
             <div id={styles.iconsInRowP3}>
               <div id={styles.iconAndTextP3}>
-                <img id={styles.IconP3} src='https://starcoach-files.storage.iran.liara.space/chat.png' />
+                <img id={styles.IconP3} src='https://starcoach-files.storage.iran.liara.space/chat.png' alt='chat'/>
 
-                <p id={styles.textP3}>
+                <h3 id={styles.textP3}>
                   هر زمان که بخواهید می تونید با منتور ها چت کنید
-                </p>
+                </h3>
               </div>
 
               <div id={styles.iconAndTextP3}>
-                <img id={styles.IconP3} src='https://starcoach-files.storage.iran.liara.space/video%20call.png' />
+                <img id={styles.IconP3} src='https://starcoach-files.storage.iran.liara.space/video%20call.png' alt='videocall'/>
 
-                <p id={styles.textP3}>
+                <h3 id={styles.textP3}>
                   هفته ای 2 تماس تصویری با منتور و همکلاسی ها دارید
-                </p>
+                </h3>
               </div>
             </div>
 
             <div id={styles.iconsInRowP3}>
               <div id={styles.iconAndTextP3}>
-                <img id={styles.IconP3} src='https://starcoach-files.storage.iran.liara.space/teamate.png' />
+                <img id={styles.IconP3} src='https://starcoach-files.storage.iran.liara.space/teamate.png' alt='teamwork'/>
 
-                <p id={styles.textP3}>
+                <h3 id={styles.textP3}>
                   با همکلاسی هاتون ارتباط دارید و گروهی کار می کنید
-                </p>
+                </h3>
               </div>
 
               <div id={styles.iconAndTextP3}>
-                <img id={styles.IconP3} src='https://starcoach-files.storage.iran.liara.space/project.png' />
+                <img id={styles.IconP3} src='https://starcoach-files.storage.iran.liara.space/project.png' alt='project based'/>
 
-                <p id={styles.textP3}>
+                <h3 id={styles.textP3}>
                   اینجا روی پروژه های واقعی کار می کنید
-                </p>
+                </h3>
               </div>
             </div>
           </div>
 
-          <img id={styles.imgP3} src='https://starcoach-files.storage.iran.liara.space/Objects.png' />
+          <img id={styles.imgP3} src='https://starcoach-files.storage.iran.liara.space/Objects.png' alt='Starcoah benfits'/>
         </div>
 
       </div>
 
       <div id={styles.part4}>
         <div id={styles.headerP2}>
-          <h3>
+          <h2>
             دانشجو های سابق استارکوچ چگونه ما را توصیف می کنند؟
-          </h3>
+          </h2>
 
           <div id={styles.square}></div>
         </div>
 
         <div dir='rtl' id={styles.commentCards}>
           <div id={styles.commentCard}>
-            <img id={styles.commentsImg} src='https://starcoach-files.storage.iran.liara.space/comments-image.png' />
+            <img id={styles.commentsImg} src='https://starcoach-files.storage.iran.liara.space/comments-image.png' alt='طه حسین پور'/>
 
             <p id={styles.commentsWriter}>
               طه حسین پور
@@ -250,5 +266,6 @@ export default function Home() {
         </div>
       </div>
     </div>
+    </>
   )
 }
