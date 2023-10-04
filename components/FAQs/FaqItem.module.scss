@@ -22,10 +22,14 @@
 .faqToggleBtn {
   background-color: #FFF;
   border: none;
-  cursor: pointer;
-  border-radius: 5px;
   outline: none;
+  cursor: pointer;
+  border-radius: 25px;
+  -webkit-tap-highlight-color: transparent;
+  
 }
+
+
 
 .faqIcons {
   @include set-width(23px, 40px);

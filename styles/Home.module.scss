@@ -56,7 +56,7 @@
     color: #2F2F2F;
     text-align: right;
     font-family: Vazir;
-    font-size: 18px;
+    @include set-font-size(15px, 18px);
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -66,7 +66,7 @@
 
   #mainButtons {
     margin-top: 67px;
-    margin-right: 75px;
+    margin-right: 25px;
     text-align: right;
   }
 
@@ -86,9 +86,9 @@
     line-height: normal;
   }
 
-  h3 {
+  h2 {
     @include set-font-size(18px, 26px);
-    margin-left: 30px;
+    margin-left: 35px;
   }
 
   #square {
@@ -202,6 +202,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     @include set-width(150px, 270px);
     margin-bottom: 60px;
     margin-left: 20px;
@@ -311,7 +312,12 @@
 
     }
 
-    #mainH1 {
+    .mainBtn{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .mainH1 {
       display: none;
     }
 
@@ -319,11 +325,12 @@
       display: none;
     }
 
-    #mainH1Mobile {
+    .mainH1Mobile {
       display: block;
       margin-right: 36px;
       margin-left: 36px;
       margin-top: 41px;
+      text-align: center;
     }
 
     #mainP {
@@ -344,6 +351,7 @@
     #square {
       border-radius: 1.5px;
       margin-right: 14px;
+      margin-left: 10px;
     }
 
     #headerP2 {
@@ -352,6 +360,7 @@
 
     #textP2 {
       margin-right: 37px;
+      margin-left: 24px;
     }
 
     #imgInCard {
