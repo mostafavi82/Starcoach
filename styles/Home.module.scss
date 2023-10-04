@@ -1,14 +1,421 @@
 @use './globals.scss' as *;
 
-  .Home{
+.Home {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  background-color: $bgColor;
+  font-family: Vazir;
+
+  #mainImage {
+    display: flex;
+    width: 62%;
+    height: 53%;
+    float: left;
+    margin-left: 37px;
+    margin-top: 34px;
+
+  }
+
+  .mainH1 {
+    color: $textColor;
+    text-align: right;
+    font-family: Vazir;
+    @include set-font-size(22px, 30px);
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    margin-top: 100px;
+    margin-right: 25px;
+  }
+
+  .mainH1Mobile {
+    display: none;
+    color: $textColor;
+    text-align: center;
+    font-family: Vazir;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  #mainH2 {
+    color: $textColor;
+    text-align: right;
+    font-family: Vazir;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 35px;
+    margin-right: 25px;
+  }
+
+  #mainP {
+    color: #2F2F2F;
+    text-align: right;
+    font-family: Vazir;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 16px;
+    margin-right: 25px;
+  }
+
+  #mainButtons {
+    margin-top: 67px;
+    margin-right: 75px;
+    text-align: right;
+  }
+
+  #coursesBtn {
+    margin-right: 36px;
+  }
+
+  #headerP2 {
+    display: flex;
+    justify-content: right;
+    margin-top: 120px;
+    color: $textColor;
+    text-align: right;
+    font-family: Vazir;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  h3 {
+    @include set-font-size(18px, 26px);
+    margin-left: 30px;
+  }
+
+  #square {
+    @include set-height(12px, 22px);
+    @include set-width(12px, 22px);
+    background-color: $mainColor ;
+    border-radius: 3px;
+    margin-left: 15px;
+    margin-right: 67px;
+    margin-top: 9px;
+  }
+
+  #textP2 {
+    color: #000;
+    text-align: right;
+    font-family: Vazir;
+    @include set-font-size(15px, 18px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 100px;
+    margin-left: 67px;
+    margin-top: 20px;
+  }
+
+  #number {
+    color: #FFF;
+    text-align: center;
+    font-family: Vazir;
+    @include set-font-size(21px, 24px);
+    @include set-width(40px, 45px);
+    @include set-height(40px, 45px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 50%;
+    background-color: $secoundColor;
+    padding-top: 5px;
+    margin-bottom: 11px;
+    margin-top: 30px;
+
+  }
+
+  #imgInCard {
+    @include set-width(225px, 360px);
+    @include set-height(148px, 219px);
+    margin-bottom: 20px;
+    margin-top: 23px;
+  }
+
+  #cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
+
+  #card {
+    @include set-width(250px, 370px);
+    @include set-height(280px, 410px);
+    background-color: #FFF;
+    border-radius: 20px;
+  }
+
+  #cardAndNumber {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: $bgColor;
-    font-family: Vazir;
-
-    
+    margin-left: 30px;
   }
 
-  
-    
+  #textInCard {
+    color: #000;
+    text-align: center;
+    font-family: Vazir;
+    @include set-font-size(14px, 18px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #iconsP3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center
+  }
+
+  #IconP3 {
+    width: 120px;
+    margin-bottom: 20px;
+  }
+
+  #imgAndIconsP3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 80px;
+    margin-top: 70px;
+  }
+
+  #iconsInRowP3 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #iconAndTextP3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include set-width(150px, 270px);
+    margin-bottom: 60px;
+    margin-left: 20px;
+  }
+
+  #textP3 {
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    font-family: Vazir;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  #imgP3 {
+    margin-left: 80px;
+    width: 484px;
+    height: 385px;
+
+  }
+
+  #commentCards {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-top: 70px;
+  }
+
+
+  #commentCard {
+    @include set-width(245px, 360px);
+    @include set-height(281px, 360px);
+    background-color: #FFF;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    display: inline-flex;
+    margin-right: 50px;
+    margin-left: 30px;
+
+  }
+
+  #commentsImg {
+    border-radius: 50%;
+    @include set-width(80px, 120px);
+    @include set-height(80px, 120px);
+    margin-top: 17px;
+    margin-bottom: 22px;
+  }
+
+  #commentsWriter {
+    color: #000;
+    text-align: center;
+    font-family: Vazir;
+    @include set-font-size(17px, 20px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  #writersJob {
+    color: #263238;
+    text-align: center;
+    font-family: Vazir;
+    @include set-font-size(14px, 18px);
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 5px;
+    margin-bottom: 30px;
+  }
+
+  #comment {
+    color: #263238;
+    text-align: center;
+    font-family: Vazir;
+    @include set-font-size(13px, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 20px;
+    margin-left: 20px;
+    white-space: wrap;
+  }
+
+  #questionBoxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    margin-top: 43px;
+    margin-right: 90px;
+  }
+
+ 
+
+  @media screen and (max-width: 1000px) {
+    #mainImage {
+      width: 87%;
+      height: 25%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      float: none;
+
+    }
+
+    #mainH1 {
+      display: none;
+    }
+
+    #mainH2 {
+      display: none;
+    }
+
+    #mainH1Mobile {
+      display: block;
+      margin-right: 36px;
+      margin-left: 36px;
+      margin-top: 41px;
+    }
+
+    #mainP {
+      text-align: center;
+      margin-right: 36px;
+      margin-left: 36px;
+    }
+
+    #mainButtons {
+      text-align: center;
+      margin-top: 53px;
+    }
+
+    #coursesBtn {
+      margin-left: 50px;
+    }
+
+    #square {
+      border-radius: 1.5px;
+      margin-right: 14px;
+    }
+
+    #headerP2 {
+      margin-top: 66px;
+    }
+
+    #textP2 {
+      margin-right: 37px;
+    }
+
+    #imgInCard {
+      margin-bottom: 0;
+    }
+
+    #imgP3 {
+      display: none;
+    }
+
+    #imgAndIconsP3 {
+      margin-right: 20px;
+    }
+
+    #writersJob {
+      margin-bottom: 15px;
+    }
+
+    #commentsImg {
+      margin-bottom: 15px;
+    }
+
+    #commentCard {
+      margin-right: 13px;
+      margin-left: 20px;
+    }
+
+    #commentCards {
+      margin-top: 30px;
+    }
+
+    #questionBoxes{
+      margin-top: 25px;
+      margin-right: 30px;
+    }
+
+
+
+
+  }
+
+  @media screen and (max-width: 560px) {
+    #cardAndNumber {
+      flex-direction: row-reverse;
+      margin-top: 30px;
+    }
+
+    #number {
+      margin-left: 26px;
+    }
+
+    #IconP3 {
+      width: 60px;
+    }
+
+    #textP3 {
+      font-size: 12px;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    #imgP3 {
+      display: none;
+    }
+  }
+
+}
