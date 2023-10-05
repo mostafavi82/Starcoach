@@ -4,6 +4,8 @@ import styles from '../styles/Home.module.scss'
 // import MentorSvg from '../public/images/mentor.svg'
 import { useEffect } from 'react';
 import Navbar from '../components/Navbar/Navbar';
+import { faqData } from '../data/faqData';
+import FaqItem from '../components/FAQs/FaqItem';
 
 
 
@@ -194,7 +196,7 @@ export default function Home() {
           <div id={styles.square}></div>
         </div>
 
-        <div id={styles.commentCards}>
+        <div dir='rtl' id={styles.commentCards}>
           <div id={styles.commentCard}>
             <img id={styles.commentsImg} src='https://starcoach-files.storage.iran.liara.space/comments-image.png' alt='طه حسین پور'/>
 
@@ -242,6 +244,25 @@ export default function Home() {
               واقعا فکر نمی کردم یک آموزش مجازی همچین کیفیتی داشته باشه. تجربه بی نظیری برای من بود و ممنون از تیم استارکوچ
             </p>
           </div>
+        </div>
+      </div>
+
+      <div id={styles.part5}>
+        <div id={styles.headerP2}>
+          <h3>
+            سوالات متداول
+          </h3>
+
+          <div id={styles.square}></div>
+        </div>
+
+        <div id={styles.questionBoxes}>
+          <div className="faq-list">
+            {faqData.map((faq, index) => (
+              <FaqItem key={index} question={faq.question} answer={faq.answer} />
+            ))}
+          </div>
+
         </div>
       </div>
     </div>
