@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <>
     <Head>
-      <title>برنامه نویسی با روش نوین| استارکوچ</title>
+      <title>برنامه نویسی با روش نوین | استارکوچ</title>
       <meta name="description" content="برنامه نویسی را بصورت پروژه محور ، گروهی و زیرنظر منتورها یاد بگیر" key="desc" />
         <meta property="og:title" content=" آموزش برنامه نویسی با روشی نوین در استارکوچ" />
         <meta
