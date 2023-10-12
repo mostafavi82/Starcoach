@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import { faqData } from '../data/faqData';
 import FaqItem from '../components/FAQs/FaqItem';
+import Footer from '../components/Footer/Footer';
 
 
 
@@ -265,6 +266,8 @@ export default function Home() {
 
         </div>
       </div>
+
+      <Footer></Footer>
     </div>
     </>
   )

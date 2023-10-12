@@ -1,0 +1,260 @@
+@use '../../styles/globals.scss' as *;
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    //@include set-height(497px, 444px);
+    background: #103663;
+    margin-top: 118px;
+}
+
+#description_logo_links_aboutUs {
+    display: flex;
+    flex-direction: row;
+}
+
+#descriptionAndLogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 40%;
+    margin-top: 70px;
+    margin-left: 117px;
+}
+
+#logoWithoutName {
+    @include set-width(72px, 125px);
+    @include set-height(72px, 125px);
+}
+
+#description {
+    color: #FFF;
+    text-align: right;
+    font-family: Vazir;
+    @include set-font-size(10px, 15px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 10px;
+    margin-right: 48px;
+}
+
+#linksAndAboutUs {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-top: 50px;
+
+}
+
+.footerH3 {
+    color: $mainColor;
+    text-align: center;
+    font-family: Vazir;
+    @include set-font-size(16px, 22px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 15px;
+    margin-right: 60px;
+    text-align: right;
+    margin-top: 25px;
+}
+
+#footerLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footerLink {
+    color: #FFF;
+    text-align: center;
+    font-family: Vazir;
+    @include set-font-size(14px, 18px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 40px;
+    margin-right: 20px;
+    text-decoration: none;
+    text-wrap: nowrap;
+}
+
+#aboutUs {
+    display: flex;
+    flex-direction: row;
+    margin-right: 60px;
+}
+
+#phoneNumberAndIcon {
+    display: flex;
+    flex-direction: row;
+    //margin-right: 60px
+}
+
+#phoneIcon {
+    @include set-width(15px, 18px);
+    @include set-height(18px, 21px);
+    margin-left: 25px;
+}
+
+#phoneNumber {
+    color: #FFF;
+    text-align: center;
+    font-family: Vazir;
+    @include set-font-size(14px, 18px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 11px;
+}
+
+#emailAndIcon {
+    display: flex;
+    flex-direction: row;
+}
+
+#emailIcon {
+    @include set-width(24px, 34px);
+    @include set-height(21px, 29px);
+}
+
+#email {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    @include set-font-size(14px, 18px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 11px;
+    margin-top: 5px;
+}
+
+#socialNetworks {
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+}
+
+#line1 {
+    width: 35%;
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: 25px;
+    height: 0;
+}
+
+.appLogo {
+    @include set-width(23px, 50px);
+    @include set-height(23px, 50px);
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#line2 {
+    width: 35%;
+    margin-right: auto;
+    margin-left: 0;
+    margin-top: 25px;
+    height: 0;
+}
+
+#rules {
+    color: #FFF;
+    text-align: center;
+    font-family: Vazir;
+    @include set-font-size(9px, 14px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 50px;
+    margin-right: 380px;
+    margin-left: 380px;
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 1200px) {
+    #footer{
+        margin-top: 45px;
+    }
+
+    #logoWithoutName {
+        margin-bottom: 5px;
+    }
+
+    #descriptionAndLogo {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 30px;
+        margin-left: 35px;
+        margin-top: 17px;
+        width: 90%
+    }
+
+    #description {
+        margin-right: 25px;
+        text-align: center;
+        margin-left: 5px;
+    }
+
+    #description_logo_links_aboutUs {
+        flex-direction: column;
+    }
+
+    #footerLinks {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-right: 60px;
+        //margin-right: 50px;
+    }
+
+    .footerH3 {
+        margin-right: 30px;
+    }
+
+    #linksAndAboutUs {
+        margin-left: 35px;
+        margin-top: 15px;
+    }
+
+    #aboutUs {
+        flex-direction: column;
+    }
+
+    #phoneIcon {
+        margin-left: 0;
+    }
+
+    #phoneNumberAndIcon {
+        margin-bottom: 10px;
+    }
+
+    #socialNetworks {
+        margin-top: 45px;
+    }
+
+    .appLogo {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #line1 {
+        width: 27%;
+        margin-top: 10px;
+    }
+
+    #line2 {
+        width: 27%;
+        margin-top: 10px;
+    }
+
+    #rules{
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 30px;
+    }
+}

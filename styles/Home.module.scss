@@ -78,17 +78,18 @@
     display: flex;
     justify-content: right;
     margin-top: 120px;
+   
+  }
+
+  h2 {
+    @include set-font-size(18px, 26px);
+    margin-left: 35px;
     color: $textColor;
     text-align: right;
     font-family: Vazir;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-  }
-
-  h2 {
-    @include set-font-size(18px, 26px);
-    margin-left: 35px;
   }
 
   #square {
@@ -103,12 +104,12 @@
 
   #textP2 {
     color: #000;
-    text-align: right;
     font-family: Vazir;
     @include set-font-size(15px, 18px);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-align: right;
     margin-right: 100px;
     margin-left: 67px;
     margin-top: 20px;
@@ -239,9 +240,9 @@
     @include set-height(281px, 360px);
     background-color: #FFF;
     border-radius: 20px;
+    display: inline-flex;
     flex-direction: column;
     align-items: center;
-    display: inline-flex;
     margin-right: 50px;
     margin-left: 30px;
 
